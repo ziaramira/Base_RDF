@@ -1,0 +1,57 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rest="http://www.VocServiceREST#" > 
+  <rdf:Description rdf:about="http://localhost:8080/Service3/bus">
+    <rest:hasTag rdf:resource="http://www.OntologyDomain#bus"/>
+    <rest:hasOperation rdf:resource="http://localhost:8080/Service3/bus#affichage"/>
+    <rest:hasName>bus</rest:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Client/train#recherche">
+    <rest:hasOutput>villeDepart</rest:hasOutput>
+    <rest:hasOutput>villeArrive</rest:hasOutput>
+    <rest:hasOutput>numTrain</rest:hasOutput>
+    <rest:hasInput>villeDepart</rest:hasInput>
+    <rest:hasPath>http://localhost:8080/Client/train/recherche?villeDepart=Alger</rest:hasPath>
+    <rest:hasNameOpr>recherche</rest:hasNameOpr>
+    <rest:hasTypeRep>application/json</rest:hasTypeRep>
+    <rest:hasDate>Sat, 07 Sep 2019 11:43:50 GMT</rest:hasDate>
+    <rest:hasDate>Sat, 07 Sep 2019 11:52:25 GMT</rest:hasDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Client/train#affichage">
+    <rest:hasDate>Sat, 07 Sep 2019 11:38:55 GMT</rest:hasDate>
+    <rest:hasTypeRep>application/xml</rest:hasTypeRep>
+    <rest:hasPath>http://localhost:8080/Client/train/affichage</rest:hasPath>
+    <rest:hasNameOpr>affichage</rest:hasNameOpr>
+    <rest:hasOutput>villeArrive</rest:hasOutput>
+    <rest:hasOutput>villeDepart</rest:hasOutput>
+    <rest:hasOutput>numTrain</rest:hasOutput>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Service1/taxi">
+    <rest:hasName>taxi</rest:hasName>
+    <rest:hasOperation rdf:resource="http://localhost:8080/Service1/taxi#recherche"/>
+    <rest:hasTag rdf:resource="http://www.OntologyDomain#taxi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Service3/bus#affichage">
+    <rest:hasPath>http://localhost:8080/Service3/bus/affichage</rest:hasPath>
+    <rest:hasNameOpr>affichage</rest:hasNameOpr>
+    <rest:hasTypeRep></rest:hasTypeRep>
+    <rest:hasDate></rest:hasDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Client/train">
+    <rest:hasOperation rdf:resource="http://localhost:8080/Client/train#recherche"/>
+    <rest:hasName>train</rest:hasName>
+    <rest:hasOperation rdf:resource="http://localhost:8080/Client/train#affichage"/>
+    <rest:hasTag rdf:resource="http://www.OntologyDomain#train"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:8080/Service1/taxi#recherche">
+    <rest:hasDate>Sat, 07 Sep 2019 11:58:05 GMT</rest:hasDate>
+    <rest:hasTypeRep>application/json</rest:hasTypeRep>
+    <rest:hasNameOpr>recherche</rest:hasNameOpr>
+    <rest:hasPath>http://localhost:8080/Service1/taxi/recherche?villeDepart=setif</rest:hasPath>
+    <rest:hasInput>villeDepart</rest:hasInput>
+    <rest:hasOutput>numTaxi</rest:hasOutput>
+    <rest:hasOutput>villeArrive</rest:hasOutput>
+    <rest:hasOutput>villeDepart</rest:hasOutput>
+  </rdf:Description>
+</rdf:RDF>
+

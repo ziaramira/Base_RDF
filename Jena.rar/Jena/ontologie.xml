@@ -1,0 +1,67 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.OntologyDomain#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.OntologyDomain"/>
+  <owl:Class rdf:about="http://www.OntologyDomain#prive">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#transport"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#motel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#hotel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#bus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#public"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#velo">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#prive"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#avion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#public"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#villa">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#appartement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#public">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#transport"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#hebergement"/>
+  <owl:Class rdf:about="http://www.OntologyDomain#hotelLuxe">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.OntologyDomain#hotel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#hotel">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#hebergement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#appartement">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#hebergement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#f3">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#appartement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#taxi">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#prive"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#train">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#public"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#f4">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#appartement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.OntologyDomain#comping">
+    <rdfs:subClassOf rdf:resource="http://www.OntologyDomain#hebergement"/>
+  </owl:Class>
+</rdf:RDF>
+
